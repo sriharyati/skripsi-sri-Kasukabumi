@@ -12,7 +12,7 @@ export default function TesTestimonyFrom(props){
             <div className="row align-items-center">
                     <div className="col"></div>
                     <div className="col-auto text-center">
-                    <Star value={4} width={39} height={35} spacing={7} cursor= "pointer"></Star>
+                    <Star value={0} width={39} height={35} spacing={7} cursor= "pointer"></Star>
                     </div>
                     <div className="col"></div>
             </div>
