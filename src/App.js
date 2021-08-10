@@ -5,6 +5,8 @@ import DetailsPage from 'pages/DetailsPage';
 import Example from "pages/Example";
 import Checkout from "pages/Checkout";
 import "assets/scss/style.scss";
+import Rating from "pages/Rating";
+
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
     <Route exact path="/properties/:id" component={DetailsPage}></Route>
     <Route path="/checkout" component={Checkout} />
     <Route exact path="/example" component={Example}></Route>
+    <Route exact path="/rating" component={Rating}></Route>
     </Router>
   </div>
   );

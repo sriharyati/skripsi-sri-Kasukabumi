@@ -4,9 +4,9 @@ import propTypes from 'prop-types';
 
 import './index.scss';
 
-export default function Star({ className, value, height, width, spacing}) {
+export default function Star({ className, value, height, width, spacing, handleclik}) {
     const decimals = Number(value) % 1;
-
+    
     const star =[];
     let leftPos = 0;
     for (let index = 0; index < 5 && index < value - decimals; index++) {
@@ -38,6 +38,7 @@ export default function Star({ className, value, height, width, spacing}) {
             className="star placeholder"
             key={`starPlaceholder-${index}`}
             style={{ left: index * width, height:height, width: width, marginRight: spacing}}
+            onClick={() => handleclik(index + 1)}
             ></div>
         );
     }

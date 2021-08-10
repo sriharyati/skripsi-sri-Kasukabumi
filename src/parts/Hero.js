@@ -24,7 +24,7 @@ export default function Hero(props) {
                 <div className="col-auto pr-5" style={{ width: 530}}>
                     <h1 className="h2 font-weight-bold line-height-1 mb-1">
                         Lupakan pekerjaanmu, <br/>
-                        Ayo Libuburan saja!
+                        Ayo Liburan saja!
                     </h1><br/>
                     <p
                      className="mb-9 font-weight-light text-gray-500 w-75"

@@ -14,3 +14,10 @@ export const submitBooking = (payload) => () => {
     headers: { contentType: "multipart/form-data" },
   });
 };
+
+export const submitTestimonial = (payload) => () => {
+  return axios.post(
+    `/form-page`, payload, {
+    headers: { contentType: "multipart/form-data" },
+  });
+};

@@ -5,11 +5,11 @@ import Star from 'elements/Star';
 import Button from 'elements/Button';
 
 export default function Testimoni({data}) {
-    return data.map((testimonial, index1) => {
-        if (testimonial.length === 0) return null;
+    return data.map((testimony, index1) => {
+        if (testimony.length === 0) return null;
         return (
             <Fade bottom>
-            <section className="container" key={`testimonial-${index1}`}>
+            <section className="container" key={`testimony-${index1}`}>
                 <div className="row align-items-center">
                     <div className="col-auto" style={{ marginRight: 70 }}>
                         <div
@@ -17,7 +17,7 @@ export default function Testimoni({data}) {
                          style={{ margin: `70px 0 0 70px`}}
                          >
                              <img 
-                             src={testimonial.imageUrl}
+                             src={`${process.env.REACT_APP_HOST}/${testimony.photoTestimonial}`}
                              alt="Testimonial" 
                              className="position-absolute"
                              style={{zIndex: 1}}/>
@@ -25,14 +25,14 @@ export default function Testimoni({data}) {
                     </div>
                     <div className="col-6">
                         <h4 style={{marginBottom: 40}}>
-                            {testimonial.name}
+                            {testimony.name}
                         </h4>
-                        <Star value={testimonial.rate} width={39} height={35} spacing={7}></Star>
+                        <Star value={testimony.rate} width={39} height={35} spacing={7}></Star>
                         <h5 className="h5 font-weight-light line-height-2 my-3">
-                            {testimonial.content}
+                            {testimony.content}
                         </h5>
                         <span className="text-gray-500">
-                            {testimonial.familyName}, {testimonial.familyOccupation}
+                            {testimony.familyName}, {testimony.familyOccupation}
                         </span>
                         
                     </div>
